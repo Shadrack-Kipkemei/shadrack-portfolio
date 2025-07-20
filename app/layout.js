@@ -1,9 +1,7 @@
 import './globals.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import ThemeProvider from './components/ThemeProvider'
-
-
+import Header from '@/components/Header/page'
+import Footer from '@/components/Footer/page'
+import ThemeProvider from '@/components/ThemeProvider/page'
 
 export const metadata = {
   title: 'Shadrack Kipkemei | Software Developer',
@@ -11,18 +9,17 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`{inter.className} bg-gray-50 dark:bg-gray-900`}>
+      <body className="bg-gray-50 dark:bg-gray-900">
         <ThemeProvider>
           <Header />
           <main className="min-h-screen">
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
-  
   )
-} 
+}
