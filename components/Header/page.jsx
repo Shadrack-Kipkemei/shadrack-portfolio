@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import ThemeToggle from '../ThemeToggle/page'
-import { socialLinks } from '@constants/social'
+import { socialLinks } from '../../constants/social/page'
 
 
 const navlinks = [
@@ -15,7 +15,7 @@ const navlinks = [
 ]
 
 export default function Header() {
-    const usePathname = usePathname()
+    const pathname = usePathname()
 
     return (
         <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
