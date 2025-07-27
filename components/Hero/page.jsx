@@ -16,7 +16,7 @@ export default function Hero() {
                         </h1>
                         <h2 className="text-2xl md:text-3xl font-semifold text-gray-700 dark:text-gray-300 mb-6">Full-Stack Software Developer</h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
-                            Motivated and detail-oriented Software Developer with hands-on experience in building full-stack applications using Python (Flask), JavaScript (React), and SQL.
+                            Motivated and detail-oriented Software Developer with hands-on experience in building full-stack applications using Python (Flask), JavaScript, React, and SQL.
                         </p>
                         <div className="flex flex-wrap gap-4 mb-8">
                             <Link
